@@ -19,9 +19,11 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+
                         primary: '#281633',
-                        secondary: '#DF2389'
+                        secondary: '#DF2389',
+                        service: '#0d0b16'
+
                     },
 
                     zIndex: {
@@ -270,11 +272,10 @@
                 <div class="col-span-4 pl-20">
                     <h1 class="text-[50px] headers">О нас</h1>
 
-                    <p class="py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur ab
-                        corrupti assumenda
-                        ut nam fuga!
-                        Maxime, autem! Sint exercitationem ullam libero aliquid in possimus a, debitis saepe architecto
-                        laboriosam!
+                    <p class="py-10">
+                        Мы — творческое рекламное агентство, объединяющее в себе страсть к инновациям, профессионализм и
+                        уникальный подход к каждому проекту. Наша миссия — помогать вашему бизнесу процветать, создавая
+                        неповторимые рекламные кампании, которые оставляют след в сердцах и уме потребителей.
                     </p>
                 </div>
             </div>
@@ -283,39 +284,42 @@
     </section>
 
 
-    <section class="py-10">
+    <section class="py-10 bg-service">
         <div class="container mx-auto">
-            <h1 class="text-[50px] pb-10 headers">Наши услуги</h1>
+            <h1 class="text-[50px] pb-10 headers text-white">Наши услуги</h1>
 
 
 
-            <div class="grid lg:grid-cols-4 gap-4">
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Широкоформатная печать</h3>
-                    <p class="pb-5 text-sm text-center">мощный инструмент привлечения внимания!
-                        Мы создаем качественные и эффективные рекламные материалы для вашего бизнеса</p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
-
-                </div>
+            <div class="grid lg:grid-cols-4 gap-4 ">
 
 
 
 
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
+
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
-                        <img class="rounded-t-lg" src="banner.png" alt="" />
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight">Широкоформатная печать</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase text-[20px] font-bold tracking-tight py-2">печать на баннере</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">мощный инструмент привлечения внимания! Мы создаем
+                                качественные и эффективные рекламные материалы для вашего бизнеса</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
-                            class="w-full inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                            Read more
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -323,88 +327,274 @@
                             </svg>
                         </a>
                     </div>
+
+                </div>
+
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">Печать визиток</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">ваш профессиональный имидж на печатном материале!
+                                Надежные и
+                                стильные визитки для успешного взаимодействия с клиентами.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase text-[20px] font-bold tracking-tight py-2">СВЕТОВЫЕ КОРОБА</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">высококачественная реклама вашего бизнеса!
+                                Создадим яркий и запоминающийся облик вашего заведения. </p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+
                 </div>
 
 
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Печать визиток</h3>
-                    <p class="pb-5 text-sm text-center">ваш профессиональный имидж на печатном материале! Надежные и
-                        стильные визитки для успешного взаимодействия с клиентами. </p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">РЕКЛАМНЫЕ ВЫВЕСКИ</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">эффективный способ привлечь внимание к
+                                вашему бизнесу. Создадим вывеску, которая подчеркнет вашу уникальность </p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
 
                 </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">СВЕТОВЫЕ КОРОБА</h3>
-                    <p class="pb-5 text-sm text-center">высококачественная реклама вашего бизнеса!
-                        Создадим яркий и запоминающийся облик вашего заведения. </p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">Флаера</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">эффективный способ распространить ваше сообщение и
+                                привлечь
+                                внимание к вашему бренду. Создадим флаеры, которые будут запомнены вашими клиентами </p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">Стенды</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">универсальное средство для привлечения внимания к
+                                вашему бренду
+                                или событию. Доверьте нам создание стендов, которые выделят вашу компанию среди
+                                конкурентов</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
 
                 </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">РЕКЛАМНЫЕ ВЫВЕСКИ</h3>
-                    <p class="pb-5 text-sm text-center">эффективный способ привлечь внимание к
-                        вашему бизнесу. Создадим вывеску, которая подчеркнет вашу уникальность
-                    </p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
+
+
+                <div
+                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">Буклеты</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">универсальное средство для привлечения внимания к
+                                Разработаем компактный и информативный буклет, для вашего
+                                компании или продукта.
+                                Создадим качественные буклеты</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
 
                 </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Флаера</h3>
-                    <p class="pb-5 text-sm text-center">эффективный способ распространить ваше сообщение и привлечь
-                        внимание к вашему бренду. Создадим флаеры, которые будут запомнены вашими клиентами</p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
+
+                <div
+                    class="bg-white/90  rounded-lg shadow h-full flex h-full flex-col justify-between group ">
+                    <a href="#">
+                        <img class="rounded-t-lg p-2" src="banner.png" alt="" />
+                    </a>
+                    <div class="p-5 flex flex-col items-start h-full">
+                        <div class="">
+                            <h5 class="uppercase  text-[20px] font-bold tracking-tight py-2">Разработка сайтов</h5>
+                        </div>
+
+                        <div class="">
+
+
+
+                            <p class="mb-3 font-normal text-black">ключ к вашему успешному присутствию в интернете. Мы
+                                создаем
+                                современные и функциональные сайты, которые отражают ваш бренд и привлекают новых
+                                клиентов</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                        <a href="#"
+                            class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
+                            Заказать
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
 
                 </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Стенды</h3>
-                    <p class="pb-5 text-sm text-center">универсальное средство для привлечения внимания к вашему бренду
-                        или событию. Доверьте нам создание стендов, которые выделят вашу компанию среди конкурентов</p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
-
-                </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Буклеты</h3>
-                    <p class="pb-5 text-sm text-center">Разработаем компактный и информативный буклет, для вашего
-                        компании или продукта.
-                        Создадим качественные буклеты</p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
-
-                </div>
 
 
-                <div class="p-5 border border-gray-200 w-full flex flex-col">
-                    <img src="banner.png" alt="">
-                    <h3 class="font-bold uppercase py-5">Разработка сайтов</h3>
-                    <p class="pb-5 text-sm text-center">ключ к вашему успешному присутствию в интернете. Мы создаем
-                        современные и функциональные сайты, которые отражают ваш бренд и привлекают новых клиентов</p>
-                    <a class="px-5 py-2 bg-secondary w-full text-center font-bold uppercase text-white"
-                        href="">Заказать</a>
 
-                </div>
+
 
 
             </div>
@@ -450,16 +640,16 @@
     </section>
 
 
-    <section>
+    <section class="py-5 bg-service ">
         <div class="swiper-container overflow-hidden">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
+                <div class="swiper-slide h-[700px]"><img src="photo.jpg" alt=""></div>
             </div>
             <!-- Add Pagination -->
 
@@ -471,7 +661,7 @@
         <div class="container mx-auto ">
             <div class="grid grid-cols-2">
                 <div class="py-20 flex items-center justify-center flex-col">
-                    <div class="p-5 border bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 shadow-lg border-white rounded-full mb-5">
+                    <div class="p-5 bg-white/30 backdrop-blur-xl rounded-full mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -489,7 +679,7 @@
                 </div>
 
                 <div class="py-20 flex items-center justify-center flex-col">
-                    <div class="p-2 border border-white rounded-full mb-5">
+                    <div class="p-5 bg-white/30 backdrop-blur-xl rounded-full mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -552,17 +742,30 @@
 
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
+            slidesPerView: 1.1,
             centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
+            spaceBetween: 20,
+            initialSlide: 1,
+            loop: true,
+            // Responsive breakpoints
             breakpoints: {
-                768: {
-                    slidesPerView: 4,
-                    centeredSlides: false
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10
                 }
-            }
+            },
+
         });
     </script>
 
