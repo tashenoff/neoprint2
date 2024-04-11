@@ -47,40 +47,7 @@
 
 
     <style>
-        /* Стили для прогресс бара */
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            /* Высота прогресс бара */
-            background-color: #DF2389;
-            /* Цвет прогресс бара */
-            z-index: 1000;
-        }
 
-        /* Стили для скрытия прогресс бара */
-        .hide-preloader {
-            display: none;
-        }
-
-        .loading-text {
-            color: #fff;
-            /* Белый цвет текста */
-            font-size: 18px;
-            /* Размер текста */
-            margin-bottom: 10px;
-            /* Отступ снизу */
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 5px;
-            /* Высота прогресс бара */
-            background-color: #DF2389;
-            /* Цвет прогресс бара */
-        }
 
 
 
@@ -140,30 +107,21 @@
 
 <body>
 
-    <div class="preloader">
-        <div class="spinner"></div>
-    </div>
 
 
-    <nav class="bg-gradient-to-r from-primary/50 backdrop-blur-xl  to-blue-900/30 from-50% py-4 fixed w-full z-100">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
+    <nav class="bg-gradient-to-r from-primary/50 backdrop-blur-xl  to-blue-900/30 from-50% py-4 left-0 top-0 lg:fixed absolute w-full z-100">
+        <div class="container mx-auto flex lg:flex-row flex-col justify-between items-center">
+            
+            
+            <div class="flex items-center w-full justify-between">
+            <div class="flex items-center ">
                 <img src="logo.svg" alt="Лого" class="h-8 w-auto">
-                <span class="text-white ml-2 hidden md:block font-bold">NEO PRINT</span>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
+                <span class="text-white ml-2 font-bold">NEO PRINT</span>
             </div>
 
             <div class="flex">
                 <div
-                    class="flex items-center bg-black hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mr-3">
+                    class="flex items-center background-animate lg:bg-black md:bg-gradient-to-r md:from-pink-400 md:via-pink-500 md:to-pink-600 text-white font-bold py-2 px-4 rounded-full lg:mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-5 h-5 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -174,39 +132,37 @@
                     <span>8 776 160
                         49 11</span>
                 </div>
+            </div>
+</div>
 
-                <div
-                    class="flex background-animate items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-full text-sm px-5 py-3 text-center me-2 uppercase mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-5 h-5 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                    </svg>
+                <div class="lg:flex hidden items-center w-full ">
+                    <div
+                        class="flex background-animate items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-full text-sm lg:px-5 px-2 lg:py-3 text-center me-2 uppercase mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                        </svg>
 
 
-                    <a href="https://wa.me/87761604911" target="_blank" rel="noopener noreferrer">
-                        Заказать создание сайта
-                    </a>
-                </div>
-                <div
-                    class="flex background-animate items-center text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm px-5 py-3 text-center me-2 rounded-full uppercase">
-                    <img class="w-[18px] mr-2" src="wp.svg" alt="">
-                    <a href="https://wa.me/87761604911" target="_blank" rel="noopener noreferrer">
-                        Написать в WhatsApp
-                    </a>
+                        <a class="lg:text-[16px] text-[10px]" href="https://wa.me/87761604911" target="_blank" rel="noopener noreferrer">
+                            Заказать создание сайта
+                        </a>
+                    </div>
+                    <div
+                        class="flex  background-animate items-center text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium text-sm px-5 py-3 text-center me-2 rounded-full uppercase">
+                        <img class="w-[18px] mr-2" src="wp.svg" alt="">
+                        <a class="lg:text-[16px] text-[10px]" href="https://wa.me/87761604911" target="_blank" rel="noopener noreferrer">
+                            Написать в WhatsApp
+                        </a>
 
+                    </div>
                 </div>
             </div>
         </div>
         </div>
     </nav>
-    <div id="menu" class="bg-gray-800 py-4 md:hidden fixed w-full top-16 z-10 hidden">
-        <div class="container mx-auto px-4">
-            <a href="#" class="block text-white py-2">Пункт меню 1</a>
-            <a href="#" class="block text-white py-2">Пункт меню 2</a>
-            <a href="#" class="block text-white py-2">Пункт меню 3</a>
-        </div>
-    </div>
+
 
 
     <section class="h-[700px] bg-primary overflow-hidden relative">
@@ -219,7 +175,7 @@
         <div class="h-full w-full flex items-center justify-center">
             <div class="container mx-auto">
                 <div class="relative z-50 text-white">
-                    <h1 class="text-[60px] headers">Рекламное агентство в Астане</h1>
+                    <h1 class="lg:text-[60px] text-[32px] headers">Рекламное агентство в Астане</h1>
                     <p class="lg:w-1/2 py-10 text-lg">Наша цель - обеспечить эффективное продвижение товаров и услуг
                         наших
                         клиентов в Астане через
@@ -296,8 +252,7 @@
 
 
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -316,7 +271,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -330,8 +286,7 @@
 
                 </div>
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -352,7 +307,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -368,8 +324,7 @@
 
 
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -388,7 +343,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -405,8 +361,7 @@
 
 
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -425,7 +380,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -440,8 +396,7 @@
                 </div>
 
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -461,7 +416,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -475,8 +431,7 @@
 
                 </div>
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -497,7 +452,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -514,8 +470,7 @@
 
 
 
-                <div
-                    class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
+                <div class="group bg-white/90 rounded-lg shadow h-full flex h-full flex-col justify-between ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -536,7 +491,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
@@ -552,8 +508,7 @@
 
 
 
-                <div
-                    class="bg-white/90  rounded-lg shadow h-full flex h-full flex-col justify-between group ">
+                <div class="bg-white/90  rounded-lg shadow h-full flex h-full flex-col justify-between group ">
                     <a href="#">
                         <img class="rounded-t-lg p-2" src="banner.png" alt="" />
                     </a>
@@ -574,7 +529,8 @@
                         </div>
                     </div>
 
-                    <div class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
+                    <div
+                        class="p-5 p-5  border-t border-gray-500/30 group-hover:bg-secondary group-hover:text-white rounded-b-lg">
                         <a href="#"
                             class="w-full uppercase inline-flex justify-between items-center px-3 py-2 text-sm font-medium text-center">
                             Заказать
