@@ -4,101 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адаптивное меню</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Рекламное агенство в Астане</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="prod.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-
-                        primary: '#281633',
-                        secondary: '#DF2389',
-                        service: '#0d0b16'
-
-                    },
-
-                    zIndex: {
-                        '100': '100',
-                    }
-                },
-
-
-                container: {
-                    padding: {
-                        DEFAULT: '1rem',
-                        sm: '2rem',
-                        lg: '7rem',
-                        xl: '7rem',
-                        '2xl': '9rem',
-                    },
-                },
-            }
-        }
-    </script>
-
-
-    <style>
-        #background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(40%);
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 1;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-        }
-
-        .headers {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 600;
-
-        }
-
-        .background-animate {
-            background-size: 400%;
-
-            -webkit-animation: AnimationName 3s ease infinite;
-            -moz-animation: AnimationName 3s ease infinite;
-            animation: AnimationName 3s ease infinite;
-        }
-
-        @keyframes AnimationName {
-
-            0%,
-            100% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-    </style>
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+       
 </head>
 
 <body>
@@ -162,22 +76,17 @@
 
 
 
-    <section class="h-[700px] bg-primary overflow-hidden relative">
+    <section class="lg:h-[700px] h-screen bg-primary overflow-hidden relative">
         <video id="background-video" autoplay muted loop>
             <source src="1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
 
-        <div class="h-full w-full flex items-center justify-center">
+        <div class="h-full w-full flex items-center justify-center mt-10">
             <div class="container mx-auto">
-                <div class="relative z-50 text-white text-center lg:text-left">
-                    <h1 class="lg:text-[60px] text-[32px]  headers">Печать на баннере в астане</h1>
-                    <p class="lg:w-1/2 pt-10 text-lg">Наша цель - обеспечить эффективное продвижение товаров и услуг
-                        наших
-                        клиентов в Астане.</br>Разработаем стильный дизайн, напечатаем на баннере, самоклейке, <br>сделаем качественные вывески.<br> 
-                        Cоздадим эффективные сайты</p>
-
+                <div class="relative z-50 text-white text-center lg:text-left mb-10 lg:mt-0">
+                    <h1 class="lg:text-[60px] text-[24px] uppercase headers">Печать на баннере в астане</h1>
                     <div class="py-10 w-full flex items-center  justify-center lg:justify-start">
                         <div class="flex lg:flex-row flex-col  lg:backdrop-blur-xl lg:bg-white/5 rounded-full ">
                             <div class="flex items-center lg:px-5 py-2">
@@ -206,6 +115,10 @@
                             </div>
                         </div>
                     </div>
+                    <p class="lg:w-1/2 pb-10 lg:text-lg text-[16px]">Разработаем стильный дизайн,<br> напечатаем на баннере, самоклейке, <br>сделаем качественные вывески.<br> 
+                        Cоздадим эффективные сайты</p>
+
+                 
 
                     <a href="https://wa.me/77781647391"
                         class="background-animate text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 uppercase">Отправить
